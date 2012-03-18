@@ -97,22 +97,21 @@ $('form').serializeObject() */
 		headers : {}
 	}
 
-    results.h1.size = Math.round((values.h1 / 16)*100)/100;
-    results.h2.size = Math.round((values.h2 / 16)*100)/100;
-    results.h3.size = Math.round((values.h3 / 16)*100)/100;
+	results.h1.size = Math.round((values.h1 / 16)*100)/100;
+	results.h2.size = Math.round((values.h2 / 16)*100)/100;
+	results.h3.size = Math.round((values.h3 / 16)*100)/100;
 	results.h4.size = Math.round((values.h4 / 16)*100)/100;
 	results.h5.size = Math.round((values.h5 / 16)*100)/100;
 
-    results.h1.margin = Math.round((values.magic / values.h1)*100)/100;
-    results.h2.margin = Math.round((values.magic / values.h2)*100)/100;
-    results.h3.margin = Math.round((values.magic / values.h3)*100)/100;
+	results.h1.margin = Math.round((values.magic / values.h1)*100)/100;
+	results.h2.margin = Math.round((values.magic / values.h2)*100)/100;
+	results.h3.margin = Math.round((values.magic / values.h3)*100)/100;
 	results.h4.margin = Math.round((values.magic / values.h4)*100)/100;
 	results.h5.margin = Math.round((values.magic / values.h5)*100)/100;
-    
-    results.h1.line = Math.round((values.magic / values.h1)*100)/100;
-    console.warn(results.h1.line)
-    results.h2.line = Math.round((values.magic / values.h2)*100)/100;
-    results.h3.line = Math.round((values.magic / values.h3)*100)/100;
+
+	results.h1.line = Math.round((values.magic / values.h1)*100)/100;
+	results.h2.line = Math.round((values.magic / values.h2)*100)/100;
+	results.h3.line = Math.round((values.magic / values.h3)*100)/100;
 	results.h4.line = Math.round((values.magic / values.h4)*100)/100;
 	results.h5.line = Math.round((values.magic / values.h5)*100)/100;
 
@@ -219,7 +218,7 @@ $('form').serializeObject() */
 
 			var grid = $('<div></div>').css({
 				'height': unit,
-				'width': '90%',
+				'width': '100%',
 				'border-bottom': '1px solid #ccc',
 				'position': 'absolute',
 				'top': unit * i,

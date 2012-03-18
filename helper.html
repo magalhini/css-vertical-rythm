@@ -106,22 +106,12 @@
 			}
 			<p><%= headers.p %> {</p>
 			<ul>
-				<li>margin-top: 0em;</li>
+				<li>font-size: <%= body.size %>em; </li>
 				<li>margin-bottom: <%= p.marginBottom %>em; </li>
+				<li>line-height: <%= p.marginBottom %>em; </li>
 			</ul>
 			}
 			
-			<p><% _.each(headers, function(item) { 
-				if (item != 'p') {%>
-				<%= item %>,
-				<% } %>
-			<% }); %>
-				
-			{</p>
-			<ul>
-				<li>margin-bottom: <%= p.marginBottom %>px;</li>
-			</ul>
-			}
 		</script>
 
 	  <section class="results">
