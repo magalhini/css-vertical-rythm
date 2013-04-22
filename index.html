@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <meta http-equiv="cleartype" content="on">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        <title>Scale my Type</title>
+        <meta name="description" content="">
+
+        <link rel="stylesheet" href="css/reset.css" type="text/css"/>
+        <link rel="stylesheet" href="css/screen.css" type="text/css"/>
+
+        <script src="components/jquery/jquery.min.js"></script>
+        <script src="components/lodash/dist/lodash.min.js"></script>
+        <script src="js/rythm.js"></script>
+
+        <!--[if lt IE 9]>
+            <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+    <div class="page">
+        <h1 class="huge">Scale <span>my</span> <span>type</span></h1>
+
+        <div class="promo">
+            <p>A tool to generate the CSS for perfect vertical rythm for your project's typography.</p>
+            <p>Input your desired pixel values for body and headers, and copy the CSS in 'em' values below.</p>
+        </div>
+
+        <section>
+            <div class="input">
+            <h1 class="guide"><span>01</span>Input your desired values</h1>
+
+            <p>
+                <label>Body:</label>
+                <input type="text" autofocus value="20" data-el="body" name="font_size" placeholder="16" id="font_size"></input> (in px)
+            </p>
+            <div style="clear:both;"></div>
+
+            <p>
+                <label>H1</label>
+                <input type="text" value="28" data-el="h1" id="h1_size" placeholder="26" name="h1_size"></input>
+            </p>
+            <p>
+                <label>H2</label>
+                <input type="text" value="26" data-el="h2" id="h2_size" placeholder="24" name="h2_size"></input>
+            </p>
+            <p>
+                <label>H3</label>
+                <input type="text" value="24" data-el="h3" id="h3_size" placeholder="22" name="h3_size"></input>
+            </p>
+            <p>
+                <label>H4</label>
+                <input type="text" value="22" data-el="h4" id="h4_size" placeholder="20" name="h4_size"></input>
+            </p>
+            <p>
+                <label>H5</label>
+                <input type="text" value="20" data-el="h5" id="h5_size" placeholder="20" name="h5_size"></input> (in px)
+            </p>
+            <p>
+                <label for="">Line height:</label>
+                <input type="text" value="1.5" data-el="line_height" id="line_height" placeholder="1.5" name="line_height"></input>
+            </p>
+            <div style="clear:both;"></div>
+            </div>
+        </section>
+
+        <h1 class="guide"><span>02</span>Check a live sample of your settings</h1>
+
+        <section class="dummy">
+            <h1>Obsoletely Fabulous</h1> <p class="body-gen">Calculon is gonna kill us and it's all everybody else's fault! Oh no! The professor will hit me! But if Zoidberg 'fixes' it&hellip; then perhaps gifts! Morbo can't understand his teleprompter because he forgot how you say that letter that's shaped like a man wearing a hat. But I know you in the future. I cleaned your poop.</p> <h2>The Series Has Landed</h2> <p class="body-gen">Can we have Bender Burgers again? Okay, it's 500 dollars, you have no choice of carrier, the battery can't hold the charge and the reception isn't very&hellip; Stop it, stop it. It's fine. I will 'destroy' you! Do a flip!</p> <ul class="body-gen"> <li>She also liked to shut up!</li> <li>I am the man with no name, Zapp Brannigan!</li> <li>Maybe I love you so much I love you no matter who you are pretending to be.</li> <li>I'm sure those windmills will keep them cool.</li> </ul> <h3>Spanish Fry</h3> <p class="body-gen">No! The kind with looting and maybe starting a few fires! You don't know how to do any of those. It's toe-tappingly tragic! I love you, buddy! File not found. Have you ever tried just turning off the TV, sitting down with your children, and hitting them?</p> <h4>Why Must I Be a Crustacean in Love?</h4> <p class="body-gen">A true inspiration for the children. Daddy Bender, we're hungry. Shut up and take my money!</p> <ol class="body-gen"> <li>I'm just glad my fat, ugly mama isn't alive to see this day.</li> <li>We can't compete with Mom! Her company is big and evil! Ours is small and neutral!</li> </ol> <h5>Fry and the Slurm Factory</h5> <p class="body-gen">She also liked to shut up! Man, I'm sore all over. I feel like I just went ten rounds with mighty Thor. What are you hacking off? Is it my torso?! 'It is!' My precious torso! Hello Morbo, how's the family?</p>
+        </section>
+
+        <h1 class="guide"><span>03</span>Copy the CSS!</h1>
+        <div class="css"></div>
+
+        <div class="credits">
+            <p>Made by <a href="http://www.ricardofilipe.com">Ricardo Magalhães</a> — View on <a href="https://github.com/magalhini/css-vertical-rythm">Github</a></p>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="//use.typekit.net/zee4qpu.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+    <script type="text/javascript">
+        $(function () {
+            vRythm.initialize($('.input'));
+        });
+    </script>
+    </body>
+</html>
